@@ -4,6 +4,7 @@ from os import path
 def main():
    
     FILE_NAME = 'local.log'
+
     count = 0
     with open(FILE_NAME, 'r') as f:
         for line in f:
