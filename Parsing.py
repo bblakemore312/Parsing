@@ -3,7 +3,7 @@ from urllib.request import urlretrieve
 from os import path
 def main():
     URL_PATH = 'https://s3.amazonaws.com/tcmg476/http_access_log'
-    LOCAL_FILE = 'local_copy.log'
+    LOCAL_FILE = 'local.log'
     FILE_NAME = 'local.log'
     count = 0
     with open(FILE_NAME, 'r') as f:
