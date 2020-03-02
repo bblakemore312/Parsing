@@ -3,6 +3,7 @@ from urllib.request import urlretrieve
 from os import path
 import operator 
 def main():
+
     URL_PATH = 'https://s3.amazonaws.com/tcmg476/http_access_log'
     LOCAL_FILE = 'local.log'
     FILE_NAME = 'local.log'
@@ -19,7 +20,6 @@ def main():
     parts = {}
     requests = {}
     mal = {}
-    
     for log_line in open(FILE_NAME):
       ERRORS = []
       regex = re.compile("([A-Za-z]{5,6}) - - \[([^:]*):(.*) \-[0-9]{4}\] \"([A-Z]+) (.+?)( HTTP.*\"|\") ([2-5]0[0-9]) ([0-9]{0,6})")
@@ -43,6 +43,7 @@ def main():
           mal[z] += 1
     for i, j in days.items():
       print("Requests per Day: ", i, j)
+
     ####################################
     counter = 0
     week = {}
@@ -84,6 +85,5 @@ def main():
     print (l2)
     print (l3)
     
-          
 if __name__ == "__main__":
   main()
