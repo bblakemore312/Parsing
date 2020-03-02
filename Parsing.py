@@ -90,8 +90,8 @@ def main():
         #ran this code to find the total number of request with those errors then added and divided to get percent 
     print ("400 errors are ", count/(23583 + 4743 + 15 + 43), "Percent")
     print ("Request redirection was: ", count/(30295 + 97792), "Percent")
-    print (l2)
-    print (l3)
+    print ("The most requested file is:", l2)
+    print ("The least requested file is:", l3)
     #printed all functions to answer the questions 
     #tired to export file but could not complete in time 
     # with open(export_file, "w+") as file:
